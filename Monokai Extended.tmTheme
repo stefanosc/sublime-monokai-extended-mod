@@ -22,7 +22,7 @@
   <key>name</key>
   <string>Monokai Extended</string>
   <key>semanticClass</key>
-  <string>theme.dark.monokai_extended</string>
+  <string>theme.dark.monokai_extended_mod</string>
   <key>settings</key>
   <array>
     <dict>
