@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
   <key>author</key>
-  <string>github.com&#x2f;jonschlinkert</string>
+  <string>github.com/jonschlinkert</string>
   <key>colorSpaceName</key>
   <string>sRGB</string>
   <key>gutterSettings</key>
@@ -29,7 +29,7 @@
       <key>settings</key>
       <dict>
         <key>activeGuide</key>
-        <string>#7fb11b</string>
+        <string>#9d550fb0</string>
         <key>background</key>
         <string>#222222</string>
         <key>bracketContentsForeground</key>
@@ -271,7 +271,7 @@
     </dict>
     <dict>
       <key>name</key>
-      <string>Library class&#x2f;type</string>
+      <string>Library class/type</string>
       <key>scope</key>
       <string>support.type, support.class</string>
       <key>settings</key>
@@ -352,7 +352,7 @@
     </dict>
     <dict>
       <key>name</key>
-      <string>HTML: Doctype&#x2f;XML Processing</string>
+      <string>HTML: Doctype/XML Processing</string>
       <key>scope</key>
       <string>meta.tag.sgml.doctype.xml, declaration.sgml.html declaration.doctype, declaration.sgml.html declaration.doctype entity, declaration.sgml.html declaration.doctype string,  declaration.xml-processing, declaration.xml-processing entity, declaration.xml-processing string, doctype</string>
       <key>settings</key>
@@ -608,9 +608,113 @@
     </dict>
     <dict>
       <key>name</key>
+      <string>JS: Instance constructor</string>
+      <key>scope</key>
+      <string>meta.instance.constructor meta.function-call.constructor.js</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#a6e22e</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>JS: es6 template delimiters ${}</string>
+      <key>scope</key>
+      <string>meta.template.expression.js punctuation.definition.template-expression.begin.js, meta.template.expression.js punctuation.definition.template-expression.end.js, meta.template.expression.js punctuation.accessor</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#AFF132</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
       <string>JS: Function Name</string>
       <key>scope</key>
       <string>meta.function.js, entity.name.function.js, support.function.dom.js</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#a6e22e</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>JS: Param commas</string>
+      <key>scope</key>
+      <string>source.js meta.function.js punctuation.separator.parameter.function.js</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#ffffff</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>JS: Object dot notation</string>
+      <key>scope</key>
+      <string>meta.property.object.js, keyword.operator.accessor.js</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#ffffff</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>JS: colons</string>
+      <key>scope</key>
+      <string>source.js meta.group.braces.curly constant.other.object.key.js punctuation.separator.key-value.js</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#ffffff</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>JS: unquoted string</string>
+      <key>scope</key>
+      <string>source.js meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#ffffff</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>JS: receiver</string>
+      <key>scope</key>
+      <string>support.type.object.module.js, source.js meta.function.declaration.js support.class.js</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#66d9ef</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>JS: receiver property</string>
+      <key>scope</key>
+      <string>support.type.object.module.js support.type.object.module.js</string>
       <key>settings</key>
       <dict>
         <key>fontStyle</key>
@@ -671,6 +775,19 @@
     </dict>
     <dict>
       <key>name</key>
+      <string>JS: Literal language variable</string>
+      <key>scope</key>
+      <string>variable.language.arguments.js, variable.language.super.js, variable.language.this.js, variable.language.self.js, variable.language.proto.js, variable.language.constructor.js, variable.language.prototype.js</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string> italic</string>
+        <key>foreground</key>
+        <string>#66d9ef</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
       <string>JS: []</string>
       <key>scope</key>
       <string>meta.brace.square.js</string>
@@ -684,7 +801,7 @@
       <key>name</key>
       <string>JS: ()</string>
       <key>scope</key>
-      <string>meta.brace.round, punctuation.definition.parameters.begin.js, punctuation.definition.parameters.end.js</string>
+      <string>meta.brace.round, punctuation.definition.parameters.begin.js, punctuation.definition.parameters.end.js, punctuation.definition.group</string>
       <key>settings</key>
       <dict>
         <key>foreground</key>
@@ -693,9 +810,9 @@
     </dict>
     <dict>
       <key>name</key>
-      <string>JS: {}</string>
+      <string>JS: object literal {}</string>
       <key>scope</key>
-      <string>meta.brace.curly.js</string>
+      <string>meta.brace.curly.js, meta.object-literal.js</string>
       <key>settings</key>
       <dict>
         <key>foreground</key>
@@ -711,6 +828,17 @@
       <dict>
         <key>foreground</key>
         <string>#cfcfc2</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>CoffeeScript String Interpolated</string>
+      <key>scope</key>
+      <string>punctuation.section.embedded.coffee</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#e69f66</string>
       </dict>
     </dict>
     <dict>
@@ -1349,6 +1477,19 @@
     </dict>
     <dict>
       <key>name</key>
+      <string>Markup: strike</string>
+      <key>scope</key>
+      <string>markup.strike</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#cc4273</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
       <string>Markdown: Blockquote</string>
       <key>scope</key>
       <string>markup.quote, punctuation.definition.blockquote.markdown</string>
@@ -1405,7 +1546,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#ffffff</string>
+        <string>#777777</string>
       </dict>
     </dict>
     <dict>
@@ -1473,6 +1614,17 @@
         <string>#ff3a281a</string>
         <key>foreground</key>
         <string>#b42a1d</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>LaTeX: Math Variables</string>
+      <key>scope</key>
+      <string>variable.other.math.tex</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#e6db74</string>
       </dict>
     </dict>
     <dict>
@@ -1855,6 +2007,17 @@
       <dict>
         <key>foreground</key>
         <string>#FFFFFF</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Nginx path</string>
+      <key>scope</key>
+      <string>string.other.path.nginx</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#fc951e</string>
       </dict>
     </dict>
   </array>
